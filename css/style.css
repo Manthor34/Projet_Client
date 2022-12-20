@@ -9,10 +9,6 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 
-/* body:hover{
-    transform:rotate(720deg) translatex(-1300px);
-} */
-
 a{
     text-decoration: none;
     color: var(--main-color);
@@ -23,17 +19,26 @@ a:visited{
     color: var(--main-color);
 }
 
-.nav{
+nav{
     display: flex;
     justify-content: flex-end;
     border-bottom: solid var(--main-color);
     height: 90px;
-    margin: 20px;
+    margin-top: 10px;
 }
 
 .navButton{
     margin: 25px;
     font-size: 35px;
+    color: var(--main-color);
+}
+
+.teletubbies{
+    margin-top: 32.9px;
+}
+
+.dropdown-item{
+    font-size: 25px;
 }
 
 .absolute{
@@ -91,11 +96,16 @@ a:visited{
 .icons{
     margin: 40px 60px 40px 60px;
     height: 80px;
+    transition: transform .5s;
+}
+
+.icons:hover{
+    transform: scale(1.1);
 }
 
 .photos{
     height: 400px;
-    transition: transform 1s;
+    transition: transform .6s;
 }
 
 .photos:hover{
@@ -176,6 +186,18 @@ textarea{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.photosGal{
+    text-align: center;
+}
+
+.videosGal{
+    text-align: center;
+}
+
+h2{
+    font-size: 55px;
+}
+
 @media (max-width: 1081px) {
     
     .video{
@@ -195,10 +217,6 @@ textarea{
         flex-direction: column;
     }
 
-    .reseaux{
-
-    }
-
     .polaroid{
         width: 600px;
         height: 400px;
@@ -206,7 +224,7 @@ textarea{
     }
 
     .navButton{
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .galerie{
@@ -248,5 +266,9 @@ textarea{
 
     .message{
         height: 400px;
+    }
+
+    input{
+        width: 500px;
     }
 }
