@@ -1,0 +1,252 @@
+*{--main-color: #00c7e0;}
+
+body{
+    margin: 0;
+    background: black;
+    color: var(--main-color);
+    /* animation: hello infinite 50s linear; */
+    overflow-x: hidden;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* body:hover{
+    transform:rotate(720deg) translatex(-1300px);
+} */
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:visited{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: solid var(--main-color);
+    height: 90px;
+    margin: 20px;
+}
+
+.navButton{
+    margin: 25px;
+    font-size: 35px;
+}
+
+.absolute{
+    position: absolute;
+    height: 80px;
+    margin-left: 10px;
+}
+
+.video{
+    margin: 80px;
+}
+
+.videoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid var(--main-color);
+    margin: 20px;
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floflo{
+    height: 400px;
+    margin: 90px;
+}
+
+.text{
+    width: 1000px;
+    font-size: 25px;
+}
+
+.polaroid{
+    margin: 90px;
+    height: 300px;
+}
+
+.polaroidContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.reseaux{
+    display: flex;
+    justify-content: center;
+    border-top: solid var(--main-color);
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.icons{
+    margin: 40px 60px 40px 60px;
+    height: 80px;
+}
+
+.photos{
+    height: 400px;
+    transition: transform 1s;
+}
+
+.photos:hover{
+    transform: scale(1.1);
+
+}
+
+@keyframes hello {
+    from {
+        transform: translatex(1900px);
+      }
+      to {
+        transform: translateX(-1900px);
+      }
+}
+
+.galerie{
+    margin: 50px 0px 50px 0px;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 90px;
+}
+
+.contact{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+input{
+    border: 0px;
+    border-radius: 10px;
+    outline: none;
+    height: 35px;
+}
+
+form{
+    margin: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid var(--main-color);
+}
+
+label{
+    display: flex;
+    color: white;
+    margin-left: 10px;
+}
+
+.message{
+    height: 150px;
+    padding-top: 10px;
+    width: 800px;
+}
+
+button{
+    align-self: center;
+    border-radius: 5px;
+    width: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+textarea{
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 1081px) {
+    
+    .video{
+        height: 600px;
+        width: 800px;
+    }
+
+    .presentation{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 80%;
+    }
+
+    .polaroidContainer{
+        flex-direction: column;
+    }
+
+    .reseaux{
+
+    }
+
+    .polaroid{
+        width: 600px;
+        height: 400px;
+        align-self: center;
+    }
+
+    .navButton{
+        font-size: 40px;
+    }
+
+    .galerie{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photos{
+        object-fit: contain;
+    }
+
+    form{
+        height: 830px;
+    }
+
+    label{
+        font-size: 35px;
+    }
+
+    input{
+        height: 50px;
+    }
+
+    ::placeholder{
+        font-size: 30px;
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .formButton{
+        height: 50px;
+        width: 200px;
+    }
+
+    .message{
+        height: 400px;
+    }
+}
