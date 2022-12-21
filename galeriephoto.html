@@ -11,22 +11,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-black">
         <a href="index.html">
             <img src="image/logo_flo.png" class="absolute">
         </a>
-        <nav>
-            <div class="nav">
-                <a class="navButton teletubbies" href="index.html">Accueil</a>
-                <!-- <a class="navButton" href="galerie.html">Galerie</a> -->
-                <a class="nav-link dropdown-toggle navButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galerie</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="galeriephoto.html">Photos</a></li>
-                          <li><a class="dropdown-item" href="galerievideo.html">Videos</a></li>
-                        </ul>
-                <a class="navButton teletubbies" href="contact.html">Contact</a>
-            </div>
-        </nav>
-    <Section class="galerie">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" navbar-toggler-icon>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" bg-black style="position: absolute;right: 10px; font-size: 40px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galerie</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="galeriephoto.html">Photos</a></li>
+                  <li><a class="dropdown-item" href="galerievideo.html">Videos</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
         <div class="photosGal">
             <h2>Photos</h2>
             <img src="image/img1png.png" class="photos">
@@ -38,5 +50,17 @@
             <img src="image/img7.png" class="photos">
             <img src="image/img8.png" class="photos">
         </div>
+
+        <footer class="reseaux">
+            <a href="https://www.instagram.com/video_service.fr/" class="aaa">
+            <img src="image/ico-insta.png" class="icons">
+            </a>
+            <a href="https://www.youtube.com/channel/UCvZua0XImErI08sq3YTQXKg" class="aaa">
+            <img src="image/ico-yt.png" class="icons">
+            </a>
+            <a href="https://www.facebook.com/Videoservice.fr" class="aaa">
+            <img src="image/ico-fb.png" class="icons">
+            </a>
+        </footer>
 </body>
 </html>

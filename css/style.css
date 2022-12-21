@@ -19,8 +19,9 @@ a:visited{
     color: var(--main-color);
 }
 
-nav{
+.navbar{
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     border-bottom: solid var(--main-color);
     height: 90px;
@@ -31,6 +32,11 @@ nav{
     margin: 25px;
     font-size: 35px;
     color: var(--main-color);
+}
+
+.nav-link{
+    color: var(--main-color);
+    margin: 0px 20px;
 }
 
 .teletubbies{
@@ -45,6 +51,7 @@ nav{
     position: absolute;
     height: 80px;
     margin-left: 10px;
+    top: 3px;
 }
 
 .video{
@@ -126,16 +133,6 @@ nav{
     margin: 50px 0px 50px 0px;
 }
 
-.formulaire{
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    margin-top: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-bottom: 90px;
-}
-
 .contact{
     display: flex;
     margin: 20px;
@@ -154,6 +151,10 @@ form{
     font-size: 20px;
     border-radius: 10px;
     border: solid var(--main-color);
+    width: 60%;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 150px;
 }
 
 label{
@@ -165,7 +166,6 @@ label{
 .message{
     height: 150px;
     padding-top: 10px;
-    width: 800px;
 }
 
 button{
@@ -186,23 +186,42 @@ textarea{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.photosGal{
-    text-align: center;
-}
-
 .videosGal{
     text-align: center;
 }
 
 h2{
     font-size: 55px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navbar-toggler-icon{
+    filter: invert();
+    justify-content: flex-end;
+}
+
+.nav-link:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.photosGal{
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 @media (max-width: 1081px) {
     
+    .navbar{
+        border: none;
+    }
+
     .video{
-        height: 600px;
-        width: 800px;
+        margin-top: 200px;
+        width: 80%;
+        height: auto;
+        margin: 10px;
     }
 
     .presentation{
@@ -218,8 +237,9 @@ h2{
     }
 
     .polaroid{
-        width: 600px;
-        height: 400px;
+        width: 70%;
+        margin: 20px;
+        object-fit: contain;
         align-self: center;
     }
 
@@ -235,10 +255,15 @@ h2{
 
     .photos{
         object-fit: contain;
+        width: 80%;
+        height: 80%;
+        margin: 10px;
     }
 
     form{
-        height: 830px;
+        margin: 0;
+        width: 90%;
+        margin: 20px;
     }
 
     label{
@@ -246,7 +271,7 @@ h2{
     }
 
     input{
-        height: 50px;
+        width: 90%;
     }
 
     ::placeholder{
@@ -265,10 +290,35 @@ h2{
     }
 
     .message{
-        height: 400px;
+        width: 90%;
     }
 
-    input{
-        width: 500px;
+    .nav {
+        display: none;
+    }
+
+    .floflo{
+        object-fit: contain;
+        width: 60%;
+        margin: 20px;
+    }
+
+    .reseaux{
+        width: 100%;
+        margin: 0;
+    }
+
+    .icons{
+        width: 60%;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    .aaa{
+        margin-left: 10%;
+    }
+
+    li.nav-item {
+        background: rgb(36, 36, 36) !important;
     }
 }
